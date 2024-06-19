@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3639790134524067908}
   - component: {fileID: 4012051780063844817}
   - component: {fileID: 8650227386047921631}
+  - component: {fileID: 263122468216325965}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -105,6 +106,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &263122468216325965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3553178192292319243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
 --- !u!1 &7421645071861138788
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +168,7 @@ GameObject:
   - component: {fileID: 8864630663557364374}
   - component: {fileID: 5749918553149220003}
   - component: {fileID: 9169969058279741618}
+  - component: {fileID: 3714879800976538003}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -244,6 +262,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3714879800976538003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236457578501399589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
 --- !u!1001 &5878345841613913303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,10 +341,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2495776888254689659, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6651525443763507645}
   m_SourcePrefab: {fileID: 100100000, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
 --- !u!4 &1548322893718114610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4965406683005644261, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
   m_PrefabInstance: {fileID: 5878345841613913303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8302055778840628652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2495776888254689659, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
+  m_PrefabInstance: {fileID: 5878345841613913303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6651525443763507645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302055778840628652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
