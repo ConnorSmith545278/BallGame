@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4012051780063844817}
   - component: {fileID: 8650227386047921631}
   - component: {fileID: 263122468216325965}
+  - component: {fileID: 4981320572152665235}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -29,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 3553178192292319243}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1081712, y: 0.0019217717, z: -0.14216243, w: 0.9839132}
-  m_LocalPosition: {x: -6.96, y: 1.55, z: -5.9}
-  m_LocalScale: {x: 9.748566, y: 1.6451, z: 3.3092582}
+  m_LocalPosition: {x: -6.72, y: 1.16, z: -5.98}
+  m_LocalScale: {x: 2.9750032, y: 1.6451, z: 3.3092582}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1720527841563908304}
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  - {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,10 +119,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
-  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  DeadMaterial: {fileID: 2100000, guid: 69cd6f5509c38fd48b0c29b4c0f18cdf, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: a75b12a68bf94264eb78b7c80d602f62, type: 2}
+  lightGreen: {fileID: 2100000, guid: 0a83fa9aae53b744ea06e08e7f26f4f7, type: 2}
+--- !u!54 &4981320572152665235
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3553178192292319243}
+  serializedVersion: 4
+  m_Mass: 10000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1 &7421645071861138788
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +197,7 @@ GameObject:
   - component: {fileID: 5749918553149220003}
   - component: {fileID: 9169969058279741618}
   - component: {fileID: 3714879800976538003}
+  - component: {fileID: 3274012141233965340}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -185,8 +214,8 @@ Transform:
   m_GameObject: {fileID: 8236457578501399589}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10782557, y: 0.00059502374, z: 0.14362195, w: 0.98374087}
-  m_LocalPosition: {x: 7.66, y: 1.56, z: -5.97}
-  m_LocalScale: {x: 9.286062, y: 1.6450999, z: 3.3092585}
+  m_LocalPosition: {x: 7.66, y: 1.24, z: -6.04}
+  m_LocalScale: {x: 3.3393607, y: 1.6450999, z: 3.3092585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1720527841563908304}
@@ -219,7 +248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  - {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,10 +303,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
-  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  DeadMaterial: {fileID: 2100000, guid: 69cd6f5509c38fd48b0c29b4c0f18cdf, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: a75b12a68bf94264eb78b7c80d602f62, type: 2}
+  lightGreen: {fileID: 2100000, guid: 0a83fa9aae53b744ea06e08e7f26f4f7, type: 2}
+--- !u!54 &3274012141233965340
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236457578501399589}
+  serializedVersion: 4
+  m_Mass: 10000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1001 &5878345841613913303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -289,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 2040216887747346905, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a83fa9aae53b744ea06e08e7f26f4f7, type: 2}
     - target: {fileID: 2495776888254689659, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
       propertyPath: m_Name
       value: Cube (1)
@@ -338,6 +394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7824788983565685021, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -345,6 +405,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2495776888254689659, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6651525443763507645}
+    - targetCorrespondingSourceObject: {fileID: 2495776888254689659, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8310057498706862734}
   m_SourcePrefab: {fileID: 100100000, guid: f33ccfda6cec15241ad5242e04d00dc5, type: 3}
 --- !u!4 &1548322893718114610 stripped
 Transform:
@@ -368,7 +431,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49276a7bee207dc4d9d3ba03335cb1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
-  FallingMaterialDark: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  FallingMaterialLight: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
-  lightGreen: {fileID: 2100000, guid: fe9f3fcbbc3d41a40b9211001743142d, type: 2}
+  DeadMaterial: {fileID: 2100000, guid: 69cd6f5509c38fd48b0c29b4c0f18cdf, type: 2}
+  FallingMaterialDark: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
+  FallingMaterialLight: {fileID: 2100000, guid: a75b12a68bf94264eb78b7c80d602f62, type: 2}
+  lightGreen: {fileID: 2100000, guid: 0a83fa9aae53b744ea06e08e7f26f4f7, type: 2}
+--- !u!54 &8310057498706862734
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302055778840628652}
+  serializedVersion: 4
+  m_Mass: 10000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
