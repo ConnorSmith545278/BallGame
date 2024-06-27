@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     private Rigidbody rb;
     public float horizontalMultiplier =1;
     public float forwardMultiplier = 1;
+    public float maxSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal") * horizontalMultiplier, 0, Input.GetAxis("Vertical") * forwardMultiplier);
+        float resistance = -(rb.velocity.z / maxSpeed) + 1;
+        Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal") * horizontalMultiplier, 0, Input.GetAxis("Vertical") * resistance * forwardMultiplier);
         if (moveVector.z < 0)
         {
             moveVector.z = 0;

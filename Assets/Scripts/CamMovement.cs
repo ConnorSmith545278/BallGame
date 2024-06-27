@@ -27,16 +27,17 @@ public class CamMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerrb.velocity.z < 0)
+        if(playerrb != null && player != null)
         {
-            transform.position = player.transform.position + startDistance;
+            if (playerrb.velocity.z < 0)
+            {
+                transform.position = player.transform.position + startDistance;
+            }
+            else
+            {
+                transform.position = player.transform.position + startDistance + (startDistance * (playerrb.velocity.z / moveFactor));
+            }
         }
-        else
-        {
-            transform.position = player.transform.position + startDistance + (startDistance * (playerrb.velocity.z / moveFactor));
-        }
-
-
 
         if (upperAnchor.transform.position.z < terrainDestroyer.transform.position.z + upperOffset)
         {

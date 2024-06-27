@@ -8,9 +8,10 @@ public class Terraindestroyer : MonoBehaviour
     private Rigidbody rb;
     private Rigidbody playerrb; 
     [SerializeField] private float acceleration;
-    [SerializeField] private float slowDown = -0.1f;
+    [SerializeField] private float slowDown = 0.1f;
     [SerializeField] private float speedUp = 2;
-    [SerializeField] private float initialSpeed;
+    private float startPositionPlayerZ;
+    private bool started = false;
     // Start is called before the first frame update
 
     private void Awake()
@@ -22,24 +23,39 @@ public class Terraindestroyer : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player");
         playerrb = player.GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0, 0, initialSpeed);
+        startPositionPlayerZ = player.transform.position.z;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(playerrb.velocity.z < rb.velocity.z)
+        if(player != null)
         {
-            acceleration = slowDown;
-        }
-        else
-        {
-            acceleration = speedUp;
+            if (!started)
+            {
+                if (startPositionPlayerZ < player.transform.position.z)
+                {
+                    started = true;
+                }
+            }
+
+            if (playerrb.velocity.z < rb.velocity.z)
+            {
+                acceleration = slowDown;
+            }
+            else
+            {
+                acceleration = speedUp;
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        rb.AddForce(0, 0, acceleration);
+        if (started)
+        {
+            rb.AddForce(0, 0, acceleration);
+        }
     }
 }

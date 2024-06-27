@@ -36,7 +36,6 @@ public class TerrainBuilder : MonoBehaviour
         }
         else
         {
-            Debug.Log(chosenObject);
             Instantiate(chosenObject, new Vector3(transform.position.x, transform.position.y, transform.position.z + terrainSize * i), Quaternion.identity);
             previousObject = chosenObject;
         }
