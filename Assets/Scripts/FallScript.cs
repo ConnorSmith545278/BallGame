@@ -11,15 +11,15 @@ public class FallScript : MonoBehaviour
     private bool falling = false;
     private float fallTime = 2;
     private Rigidbody rb;
-    private Renderer renderer;
+    private Renderer render;
     [SerializeField] private float deletePoint = -20;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        renderer = GetComponent<Renderer>();
-
+        render = GetComponent<Renderer>();
+        
         if(DeadMaterial == null || FallingMaterialDark == null  || FallingMaterialLight== null)
         {
             Debug.Log("Error. Missing material on" + gameObject);
@@ -36,7 +36,7 @@ public class FallScript : MonoBehaviour
         if(fallTime < 0.0f)
         {
             rb.constraints = RigidbodyConstraints.None;
-            renderer.material = DeadMaterial; 
+            render.material = DeadMaterial; 
             if(transform.position.y < deletePoint)
             {
                 Destroy(gameObject);
@@ -51,14 +51,14 @@ public class FallScript : MonoBehaviour
             if ( ! falling )
             {
                 //Removes the "Instance" part of a material's name so it's compatable with checking names. Then depending on name, chooses a material.
-                string materinal_name = renderer.material.name.Replace( " (Instance)", "");
-                if (renderer.material.color == lightGreen.color)
+                string materinal_name = render.material.name.Replace( " (Instance)", "");
+                if (render.material.color == lightGreen.color)
                 {
-                    renderer.material = FallingMaterialLight;
+                    render.material = FallingMaterialLight;
                 }
                 else
                 {
-                    renderer.material = FallingMaterialDark;
+                    render.material = FallingMaterialDark;
                 }
                 falling = true;
             }

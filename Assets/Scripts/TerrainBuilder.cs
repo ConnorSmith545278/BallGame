@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TerrainBuilder : MonoBehaviour
 {
@@ -9,22 +10,24 @@ public class TerrainBuilder : MonoBehaviour
     [SerializeField] private float terrainSize;
     [SerializeField] private int terrainAmount;
     [SerializeField] private GameObject[] Obstacles;
+    [SerializeField] private GameObject finish;
     private GameObject chosenObject;
     private GameObject previousObject;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         for (int i = 0; i < terrainAmount; i++)
         {
-            spawnObstacle(i);
+            if (i == terrainAmount - 1)
+            {
+                Instantiate(finish, new Vector3(transform.position.x, transform.position.y, transform.position.z + terrainSize * i), Quaternion.identity);
+            }
+            else
+            {
+                spawnObstacle(i);
+            }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void spawnObstacle(int i)

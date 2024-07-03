@@ -18,28 +18,29 @@ public class BlinkUntilButton : MonoBehaviour
         startBlinkTime = blinkTime;
         box = GetComponent<TextMeshProUGUI>();
         boxContents = box.text;
-        
+        Invoke("blink", blinkTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        blinkTime -= Time.deltaTime;
-        if(blinkTime < 0)
-        {
-            blinkTime=startBlinkTime;
-            if(box.text != "")
-            {
-                box.text = "";
-            }
-            else
-            {
-                box.text = boxContents;
-            }
-        }
+        
         if(Input.GetKey(clickedKey1) || Input.GetKey(clickedKey2)) 
         {
             Destroy(gameObject);
         }
+    }
+
+    private void blink()
+    {
+        if (box.text != "")
+        {
+            box.text = "";
+        }
+        else
+        {
+            box.text = boxContents;
+        }
+        Invoke("blink", blinkTime);
     }
 }

@@ -7,11 +7,6 @@ public class CamFollow : MonoBehaviour
     public GameObject anchor;
     [SerializeField] private Vector3 velocity = Vector3.zero;
     [SerializeField] private float smoothTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
