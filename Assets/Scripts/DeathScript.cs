@@ -6,7 +6,7 @@ public class DeathScript : MonoBehaviour
 {
     [SerializeField] private float deathValue;
     [SerializeField] private GameObject endScreen;
-    [SerializeField] private GameObject startScreen;
+    [SerializeField] private GameObject particleEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,7 @@ public class DeathScript : MonoBehaviour
     {
         if (transform.position.y < deathValue)
         {
+            Instantiate(particleEffect, gameObject.transform.position, gameObject.transform.rotation);
             Instantiate(endScreen);
             Destroy(gameObject);
         }

@@ -124,6 +124,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &9149668172039052749
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -275,6 +276,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &7653610197313208069
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -426,6 +428,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &1419718951602233927
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -577,6 +580,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &6087919435831642857
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -728,6 +732,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &7490774807204791813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -769,6 +774,7 @@ GameObject:
   - component: {fileID: 6999573667456145569}
   - component: {fileID: 6061969541182808495}
   - component: {fileID: 6941815945941862733}
+  - component: {fileID: 502655613368514775}
   m_Layer: 0
   m_Name: PlatformCell (7)
   m_TagString: Untagged
@@ -879,6 +885,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &6941815945941862733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -906,6 +913,165 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!82 &502655613368514775
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887219950143030795}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20f31828112dc5041aa6a350134f4787, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.648
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.005
+      value: 1
+      inSlope: -200.07968
+      outSlope: -200.07968
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.01
+      value: 0.5
+      inSlope: -50.01992
+      outSlope: -50.01992
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.02
+      value: 0.25
+      inSlope: -12.50498
+      outSlope: -12.50498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.04
+      value: 0.125
+      inSlope: -3.126245
+      outSlope: -3.126245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.08
+      value: 0.0625
+      inSlope: -0.78156126
+      outSlope: -0.78156126
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16
+      value: 0.03125
+      inSlope: -0.19539031
+      outSlope: -0.19539031
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32
+      value: 0.015625
+      inSlope: -0.04884758
+      outSlope: -0.04884758
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.0078125
+      inSlope: -0.012211895
+      outSlope: -0.012211895
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.005001994
+      outSlope: -0.005001994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2993976614224781455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1196,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &1064997776806018975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1181,6 +1348,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &8360239635832953518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1222,6 +1390,7 @@ GameObject:
   - component: {fileID: 5500969001931123467}
   - component: {fileID: 2314020572411364118}
   - component: {fileID: 6726092409963218920}
+  - component: {fileID: 153012838218243766}
   m_Layer: 0
   m_Name: PlatformCell (13)
   m_TagString: Untagged
@@ -1332,6 +1501,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &6726092409963218920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1359,6 +1529,165 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!82 &153012838218243766
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494450914321445221}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20f31828112dc5041aa6a350134f4787, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.648
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.005
+      value: 1
+      inSlope: -200.07968
+      outSlope: -200.07968
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.01
+      value: 0.5
+      inSlope: -50.01992
+      outSlope: -50.01992
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.02
+      value: 0.25
+      inSlope: -12.50498
+      outSlope: -12.50498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.04
+      value: 0.125
+      inSlope: -3.126245
+      outSlope: -3.126245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.08
+      value: 0.0625
+      inSlope: -0.78156126
+      outSlope: -0.78156126
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16
+      value: 0.03125
+      inSlope: -0.19539031
+      outSlope: -0.19539031
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32
+      value: 0.015625
+      inSlope: -0.04884758
+      outSlope: -0.04884758
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.0078125
+      inSlope: -0.012211895
+      outSlope: -0.012211895
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.005001994
+      outSlope: -0.005001994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5891067918844151399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1702,7 @@ GameObject:
   - component: {fileID: 8360771558558137165}
   - component: {fileID: 5857596426764243504}
   - component: {fileID: 6807089430867784127}
+  - component: {fileID: 4824612924238544295}
   m_Layer: 0
   m_Name: PlatformCell (2)
   m_TagString: Untagged
@@ -1483,6 +1813,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &6807089430867784127
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1510,6 +1841,165 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!82 &4824612924238544295
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5891067918844151399}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20f31828112dc5041aa6a350134f4787, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.648
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.005
+      value: 1
+      inSlope: -200.07968
+      outSlope: -200.07968
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.01
+      value: 0.5
+      inSlope: -50.01992
+      outSlope: -50.01992
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.02
+      value: 0.25
+      inSlope: -12.50498
+      outSlope: -12.50498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.04
+      value: 0.125
+      inSlope: -3.126245
+      outSlope: -3.126245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.08
+      value: 0.0625
+      inSlope: -0.78156126
+      outSlope: -0.78156126
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16
+      value: 0.03125
+      inSlope: -0.19539031
+      outSlope: -0.19539031
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32
+      value: 0.015625
+      inSlope: -0.04884758
+      outSlope: -0.04884758
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.0078125
+      inSlope: -0.012211895
+      outSlope: -0.012211895
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.005001994
+      outSlope: -0.005001994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5923870769327956944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +2124,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &7308342739048700580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1785,6 +2276,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &5474775158556627053
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1873,6 +2365,7 @@ GameObject:
   - component: {fileID: 1012336355767783874}
   - component: {fileID: 7708626215744360847}
   - component: {fileID: 175547200221213234}
+  - component: {fileID: 4107252897796013832}
   m_Layer: 0
   m_Name: PlatformCell (10)
   m_TagString: Untagged
@@ -1983,6 +2476,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &175547200221213234
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2010,6 +2504,165 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!82 &4107252897796013832
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7184195555613422112}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20f31828112dc5041aa6a350134f4787, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.648
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0
+  MaxDistance: 200
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.005
+      value: 1
+      inSlope: -200.07968
+      outSlope: -200.07968
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.01
+      value: 0.5
+      inSlope: -50.01992
+      outSlope: -50.01992
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.02
+      value: 0.25
+      inSlope: -12.50498
+      outSlope: -12.50498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.04
+      value: 0.125
+      inSlope: -3.126245
+      outSlope: -3.126245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.08
+      value: 0.0625
+      inSlope: -0.78156126
+      outSlope: -0.78156126
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16
+      value: 0.03125
+      inSlope: -0.19539031
+      outSlope: -0.19539031
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32
+      value: 0.015625
+      inSlope: -0.04884758
+      outSlope: -0.04884758
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.0078125
+      inSlope: -0.012211895
+      outSlope: -0.012211895
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.005001994
+      outSlope: -0.005001994
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8290658088268784803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2787,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &4214697178295543762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2285,6 +2939,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &3570239789756345605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2436,6 +3091,7 @@ MonoBehaviour:
   FallingMaterialLight: {fileID: 2100000, guid: cd5930b7393ead24f8150ddbfd129e6a, type: 2}
   lightGreen: {fileID: 2100000, guid: c5b6cfb18add04744a015e3d5992d9fb, type: 2}
   deletePoint: -20
+  breakparticle: {fileID: 222163799654567822, guid: 85ade9489b6ba5044b0ada3642b0ce32, type: 3}
 --- !u!54 &7603870906972762413
 Rigidbody:
   m_ObjectHideFlags: 0

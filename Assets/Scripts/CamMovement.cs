@@ -29,6 +29,7 @@ public class CamMovement : MonoBehaviour
     {
         if(playerrb != null && player != null)
         {
+            //if the player is moving forwards, the camera zooms out a bit depending on the speed.
             if (playerrb.velocity.z < 0)
             {
                 transform.position = player.transform.position + startDistance;
@@ -39,6 +40,7 @@ public class CamMovement : MonoBehaviour
             }
         }
 
+        //if the terrain destroyer is close, the camera will follow the upper anchor rather than the current gameobject.
         if (upperAnchor.transform.position.z < terrainDestroyer.transform.position.z + upperOffset)
         {
             camFollow.anchor = upperAnchor;

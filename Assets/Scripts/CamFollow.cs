@@ -11,6 +11,7 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //the camera smoothly follows the anchorn using SmoothDamp.
         if(anchor != null)
        transform.position = Vector3.SmoothDamp(transform.position, anchor.transform.position, ref velocity, smoothTime);
     }

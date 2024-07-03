@@ -13,12 +13,15 @@ public class FallScript : MonoBehaviour
     private Rigidbody rb;
     private Renderer render;
     [SerializeField] private float deletePoint = -20;
+    private AudioSource AudioSource;
+    [SerializeField] private GameObject breakparticle;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         render = GetComponent<Renderer>();
+        AudioSource = GetComponent<AudioSource>();  
         
         if(DeadMaterial == null || FallingMaterialDark == null  || FallingMaterialLight== null)
         {
@@ -39,6 +42,10 @@ public class FallScript : MonoBehaviour
             render.material = DeadMaterial; 
             if(transform.position.y < deletePoint)
             {
+                if(breakparticle != null)
+                {
+                    Instantiate(breakparticle, gameObject.transform.position, gameObject.transform.rotation);
+                }
                 Destroy(gameObject);
             }
         }
@@ -61,6 +68,11 @@ public class FallScript : MonoBehaviour
                     render.material = FallingMaterialDark;
                 }
                 falling = true;
+                if(AudioSource != null)
+                {
+                    AudioSource.pitch = Random.Range( 0.4f, 0.8f );
+                    AudioSource.Play(0);
+                }
             }
         }
     }
